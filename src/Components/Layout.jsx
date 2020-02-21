@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.css';
 import Construction from './Construction';
+import HomePage from './HomePage'
 
 const mapStateToProps = state => ({
   ...state
@@ -16,6 +17,7 @@ class Layout extends Component {
    return (
     <div className="Layout">
       {currentPage === "construction" && <Construction/>}
+      {currentPage === "home" && <HomePage/>}
     </div>
    );
   }

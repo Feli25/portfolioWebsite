@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
   ...state
 })
 
-class App extends Component {
+class Construction extends Component {
   updateStore = (event) => {
     this.props.dispatch({type:"UPDATE_STORE", name:event.target.name, value:event.target.value})
    }
@@ -25,4 +25,4 @@ class App extends Component {
  }
  
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(Construction);

@@ -26,3 +26,51 @@
   border-radius: 20%
 }
 
+.home{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeHeader{
+  color:black;
+}
+
+.homeNavBar{
+  background-color: lightgray;
+  color:black;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.homeNavBarButtons{
+  width:50%;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.me,.experience,.projects,.skills,.contact{
+  width:100%;
+  height:400px;
+}
+.me{
+  background-color: #C4CADD;
+}
+.experience{
+  background-color: blue;
+}
+.projects{
+  background-color: white;
+}
+.skills{
+  background-color: chartreuse;
+}
+.contact{
+  background-color: red;
+}
+.homeFooter{
+  color:black
+}
+
