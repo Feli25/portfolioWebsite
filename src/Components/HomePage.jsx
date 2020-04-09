@@ -145,6 +145,8 @@ class HomePage extends Component {
               <div className='skills'>
                   <div className='wrapSkills'>
                     <div className='skillsBox'>
+                    <div style={{display:'flex', flexDirection:'column'}}>
+
                       <div>
                         <h3>JavaScript</h3>
                         <img src={jsLogo}/>
@@ -194,6 +196,7 @@ class HomePage extends Component {
                         <h3>Github</h3>
                         <img src={githubLogo}/>
                       </div>
+                    </div>
                     </div>
                   </div>
               </div>
