@@ -16,7 +16,7 @@ $darkFont: rgb(108, 106, 106);
 $mainBackground: #dedede;
 $homeBackground: url(https://i.pinimg.com/564x/f8/ac/db/f8acdb49908f0cca4f00a0a59b3dee71.jpg);
 $headerBackground:#f2f2f2;
-$boxBackground: radial-gradient(circle 600px at 100% 0,#eeeeee,#e4e4e4);
+$boxBackground: radial-gradient(circle 600px at 100% 0, #c4f7ff, #ffffff);
 $headerTitle: linear-gradient(to top, rgb(0, 72, 148) 40%, rgb(1, 196, 255) 100%);
 $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
 
@@ -53,6 +53,10 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
+
+  background-color: #fff;
+  background-image: linear-gradient(90deg, #eae8e8 2.1px, #fbfbfb 0.1px);
+  background-size: 15vw 1vw;
 }
 
 .homeHeader{
@@ -80,13 +84,11 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
 }
 .homeNavBox{
   position: fixed;
-  /* bottom:0; */
   top: 50%;
   right:0;
   width:10%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   margin-bottom: 20px;
   a {
     display: inline-block;
@@ -105,8 +107,6 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
     &:hover{
       font-size: 1.1rem;
       color: $lightBlueFont;
-      /* color:  rgb(165, 165, 165); */
-      /* background: rgba(63, 63, 63, 0.125); */
     }
     &:after {    
       background: none repeat scroll 0 0 transparent;
@@ -136,41 +136,26 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
       margin-right: auto;
       width:80%;
       max-width: 1280px;
-        background: $homeBackground;
-        background-position: 50% 0;
-        background-size: auto;
-        background-repeat: repeat;
-        background-attachment: fixed;
-        overflow: hidden;
-      //   &::after {
-      //   content: "";
-      //   background: $homeBackground;
-      //   background-position: 50% 0;
-      //   background-size: auto;
-      //   background-repeat: repeat;
-      //   background-attachment: fixed;
-      //   width: 100%;
-      //   height:100%;
-      //   opacity: 0.2;
-      //   top: 0; left: 0; bottom: 0; right: 0;
-      //   position: absolute;
-      //   z-index: -1;   
-      // }
+      // background: $homeBackground;
+      // background-position: 50% 0;
+      // background-size: auto;
+      // background-repeat: repeat;
+      // background-attachment: fixed;
+      overflow: hidden;
       section {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 50px;
-        .title {
+        margin-bottom: 12rem;   
+        .sectionTitle {
           text-align: right;
           flex: 0.5;
           h2{
             transform: rotate(-90deg);
             transform-origin: 0 100%;
             position: absolute;
-            bottom: 20%;
             left: 50px;
             color:$darkFont;
             font-size: 30px;
@@ -186,41 +171,102 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
           div{
             display:flex;
             align-items: flex-start;
-            flex:1;
             color:$fontDefaultColor;
             h3{
               color:$lightBlueFont;
               font-weight: 300;
             }
             p{
-              text-align:right;
               padding: 20px;
-              border-radius: 16px;
-              box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
-              background: $boxBackground;
               margin:20px;
             }
           }
-          .skills{
-            .wrapSkills{
+
+          // ***** ABOUT ME *****
+          .aboutMe{
+            margin: auto 40px;
+            text-align: left;
+            border-radius: 16px;
+            box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);            
+            // background: $boxBackground;
+            background-size: contain;
+            background-image: url('./Globals/js.png');
+            background-repeat: no-repeat;
+            background-position-x: right;
+
+          }
+          // ***** EXPERIENCE *****
+          .experience{
+            margin: auto 40px;
+            .wrapExp{
               display:flex;
-              .skillsBox{
-                text-align:right;
-                padding: 20px;
+              flex-direction: column;
+              flex-wrap: wrap;
+              .expBox{
+                text-align:left;
                 border-radius: 16px;
                 box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
                 background: $boxBackground;
+                flex-direction: column;
+                margin: 10px; 
+              }
+              img{
+                width:20%;
+                margin: 30px auto 0px;
+              }
+              .footer{
+                background:darkgray;
+                color:white;
+                padding: 15px;
+                border-radius: 0 16px;
+                box-shadow: inset -1px 1px 2px $darkFont;
+              }
+            }
+          }
+          // ***** PROJECTS *****
+
+          .projects{
+            margin: auto 40px;
+            & > *{
+              text-align:left;
+              border-radius: 16px;
+              box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
+              background: $boxBackground;
+              flex-direction: column;
+              margin: 10px;
+              h3{
+                margin: 30px auto 0px 40px;
+              }
+            }
+
+          }
+
+          // ***** SKILSS *****
+          .skills{
+            margin: auto 40px;
+            .wrapSkills{
+              display:flex;
+              flex-wrap: wrap;
+              .skillBox{
+                flex-direction: column;
                 margin:20px;
+                border-radius: 16px;
+                box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
+                background: $boxBackground;
+                .title{
+                  box-shadow:inset -1px -2px 3px white;
+                  padding: 0 30px;
+                  border-radius:16px 0;
+                }
                 img{
-                  width:30px;
+                  width:60px;
                 }
               }
             }
           }
           .rightBox{
-            align-items: flex-end;
+            flex-wrap:wrap;
             p{
-              margin-top: 130px;
               text-align: left;
             }
           }
@@ -237,7 +283,6 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
             border-radius: 16px;
             box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
             background: $boxBackground;
-            // background: radial-gradient(circle 600px at 100% 0,#212121,#121212);
             margin:20px;
             flex:1;
             z-index:3;
@@ -303,12 +348,6 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
               border-radius: 20px;
               z-index: 3;
             }
-            // .icon{
-            //   position: absolute;
-            //   top:200px;
-            //   left:550px;
-            //   width: 400px;
-            // }
           }
         }
       }
@@ -316,6 +355,7 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
 
 
 .homeFooter{
+  background-color: white;
   border-top: 1px solid rgb(80, 80, 80);
   padding: 90px 0px;
 }
