@@ -201,65 +201,6 @@ class HomePage extends Component {
                   </div>
               </div>
             </article>
-          {/* <article>
-              <div className='skills'>
-                <p>
-                  <div className='wrapSkills'>
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                      <div>
-                        <h3>JavaScript</h3>
-                        <img src={jsLogo}/>
-                      </div>
-                      <div>
-                        <h3>React</h3>
-                        <img src={reactLogo}/>
-                      </div>
-                      <div>
-                        <h3>Redux</h3>
-                        <img src={reduxLogo}/>
-                      </div>
-                    </div>
-                    
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                      <div>
-                        <h3>HTML</h3>
-                        <img src={htmlLogo}/>
-                      </div>
-                      <div>
-                        <h3>CSS</h3>
-                        <img src={cssLogo}/>
-                      </div>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                      <div>
-                        <h3>NodeJS</h3>
-                        <img src={nodejsLogo}/>
-                      </div>
-                      <div>
-                        <h3>PHP</h3>
-                        <img src={phpLogo}/>
-                      </div>
-                      <div>
-                        <h3>MongoDB</h3>
-                        <img src={mongodbLogo}/>
-                      </div>
-                    </div>
-
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                      <div>
-                        <h3>Git</h3>
-                        <img src={gitLogo}/>
-                      </div>
-                      <div>
-                        <h3>Github</h3>
-                        <img src={githubLogo}/>
-                      </div>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </article> */}
         </section>
 
         {/* Contact */}

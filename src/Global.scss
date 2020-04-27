@@ -14,7 +14,8 @@ $fontDefaultColor: rgb(67, 67, 67);
 $formFocusFont: rgb(150, 196, 191);
 $darkFont: rgb(108, 106, 106);
 $mainBackground: #dedede;
-$homeBackground: url(https://i.pinimg.com/564x/f8/ac/db/f8acdb49908f0cca4f00a0a59b3dee71.jpg);
+$homeBackground: url(./Globals/bg-test.png);
+// $homeBackground: url(https://i.pinimg.com/564x/f8/ac/db/f8acdb49908f0cca4f00a0a59b3dee71.jpg);
 $headerBackground:#f2f2f2;
 $boxBackground: radial-gradient(circle 600px at 100% 0,#eeeeee,#e4e4e4);
 $headerTitle: linear-gradient(to top, rgb(0, 72, 148) 40%, rgb(1, 196, 255) 100%);
@@ -149,8 +150,8 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
       //   background-size: auto;
       //   background-repeat: repeat;
       //   background-attachment: fixed;
-      //   width: 100%;
-      //   height:100%;
+      //   width: 100vw;
+      //   height:100vh;
       //   opacity: 0.2;
       //   top: 0; left: 0; bottom: 0; right: 0;
       //   position: absolute;
@@ -328,70 +329,3 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
   color:black;
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .homeBody{
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-top: 300px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 1280px;
-//   section {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 80%;
-//     margin: 50px;
-//     div {
-//       color:rgb(205, 205, 205);
-//       p{
-//         flex: 1;
-//         padding: 30px;
-//         text-align: right;
-//         border-radius: 16px;
-//         box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
-//         background: radial-gradient(circle 600px at 100% 0,#212121,#121212);
-//         margin:20px;
-//       }
-//       p:nth-of-type(even){
-//         margin-top: 130px;
-//         text-align: left;
-//       }
-//     }
-//     div:nth-of-type(odd){
-//       flex: 1;
-//       /* color:rgb(108, 106, 106); */
-//       color:rgb(17, 189, 172);
-//       font-size: 30px;
-//       margin: 35px;
-//       transform: rotate(-90deg);
-//     }
-    
-//     .me,.experience,.projects,.skills,.contact{
-//       display: flex;
-//       padding-top: 80px;
-//       align-items: flex-start;
-//     }
-//   }
-// }
