@@ -15,10 +15,14 @@ class Layout extends Component {
   render() {
     var currentPage = this.props.simpleReducer.showPage
    return (
-    <div className="Layout">
-      {currentPage === "construction" && <Construction/>}
-      {currentPage === "home" && <HomePage/>}
-    </div>
+     <React.Fragment>
+        {currentPage === "construction" && 
+          <div className="Layout">
+            <Construction/>
+          </div>
+        }
+        {currentPage === "home" && <HomePage/>}
+      </React.Fragment>
    );
   }
  }

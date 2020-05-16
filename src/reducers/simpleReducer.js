@@ -1,6 +1,6 @@
 const initialState = {
-  showPage:"construction",
-  // showPage:"home",
+  // showPage:"construction",
+  showPage:"home",
   // test2:"hey"
 }
 
