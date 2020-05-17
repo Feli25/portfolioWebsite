@@ -191,6 +191,7 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
             }
           }
           .skills{
+            margin-top: 100px;
             .wrapSkills{
               display:flex;
               .skillsBox{
@@ -218,7 +219,7 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-top: 40px;
+          margin-top: 100px;
           flex:5;
           .wrapForm{
             text-align: left;
