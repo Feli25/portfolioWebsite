@@ -16,10 +16,15 @@ class Contact extends Component {
    }
   submitContact = () =>{
     var {fname, lname, mail, subject, message} = this.props.simpleReducer
-    // console.log("test",fname, lname, mail, subject, message)
+    var emailSplit = mail.split("")
+    if(!fname || !lname || !mail || !subject || !message || !emailSplit.includes("@") || !emailSplit.includes(".")){
+      this.props.dispatch({type:"UPDATE_STORE", name:"errMessage", value:"Please fill out all the fields correctly!"})
+      return;
+    }
+    this.props.dispatch({type:"UPDATE_STORE", name:"errMessage", value:"Sending...."})
     let templateParams = {
       subject: subject,
-      html: `
+      message: `
       <h2>From ${fname} ${lname},</h2>
       <p>Email: ${mail}</p>
       <p>Message: ${message}</p>`}
