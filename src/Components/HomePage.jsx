@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-// import image from '../Globals/sample.png'
-import image from '../Globals/whiteLines.jpg';
+import image from '../Globals/LogoRaw.png'
+// import image from '../Globals/whiteLines.jpg';
 import mailbox from '../Globals/mailBox.jpg';
-import feliPic from '../Globals/Profile-pic.png';
+import feliPic from '../Globals/meComplete.jpg';
+// import feliPic from '../Globals/me.jpg';
 import jsLogo from '../Globals/js.png';
 import reactLogo from '../Globals/react.png';
 import reduxLogo from '../Globals/redux.png';
@@ -28,8 +29,8 @@ class HomePage extends Component {
    return (
     <div className="home">
       <div className="homeHeader">
-        {/* <img src={image} width="20px" height="20px"/> */}
         <div className="homeHeaderTitle">
+        <img src={image} className="homeHeaderImage" alt=""/>
           Felicitas Deutges
         </div>
       </div>
@@ -105,16 +106,22 @@ class HomePage extends Component {
           <article>
               <div>
               <p>
-                <h3>Project 1</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Malesuada fames ac turpis egestas sed tempus urna et pharetra.
+                <h3>Elviras Nähspass</h3>
+                This Website was created as an online presence for a sewing school. In collaboration with a UX/UI Designer.
+                It gives everyone the possibility to see all the information about the sewing school and get in contact with the teachers.
+                I also programmed a CMS in the background, you can log in as an administrator and edit all the information on the website.
+                <br/>
+                <a href="http://www.elviras-naehspass.com/">www.elviras-naehspass.com</a>
                 </p>
               </div>
               <div className='rightBox'>
                 <p>
-                <h3>Project 2</h3>
-                Turpis nunc eget lorem dolor sed viverra. Eu lobortis elementum nibh tellus molestie nunc non.
-                Placerat vestibulum lectus mauris ultrices eros in cursus. Vitae congue eu consequat ac felis donec et odio pellentesque.
+                <h3>HS - Be strong</h3>
+                  A website programmed in the course of a few hours, during the Covid-19 pandemic. 
+                  This was built for a hospital to be able to answer to questions related to Covid-19 without the people needing to come in house or block the phone lines.
+                  You can register as a user and ask a question, certified doctors in quarantine at home can go and answer them.
+                  <br/>
+                  <a href="http://www.elviras-naehspass.com/">www.elviras-naehspass.com</a>
                 </p>
               </div>
               <div>
