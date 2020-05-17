@@ -7,7 +7,8 @@ const initialState = {
   mail:"",
   subject:"",
   message:"",
-  errMessage:""
+  errMessage:"",
+  captchaVerified:false
 }
 
 export default (state = initialState, action) => {

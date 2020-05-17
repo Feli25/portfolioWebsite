@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import '../Global.scss';
 import mailbox from '../Globals/mailBox.jpg';
 import emailjs from 'emailjs-com';
+import Recaptcha from "react-recaptcha";
 
 const mapStateToProps = state => ({
   ...state
@@ -15,14 +16,14 @@ class Contact extends Component {
    }
   submitContact = () =>{
     var {fname, lname, mail, subject, message} = this.props.simpleReducer
-    console.log("test",fname, lname, mail, subject, message)
+    // console.log("test",fname, lname, mail, subject, message)
     let templateParams = {
       subject: subject,
       html: `
       <h2>From ${fname} ${lname},</h2>
       <p>Email: ${mail}</p>
       <p>Message: ${message}</p>`}
-      
+
     emailjs.send('gmail', 'contactformportfolio', templateParams, "user_AOqEsp5L6NpkcR7qV1jTn")
       .then(response=> {
         console.log('SUCCESS!', response.status, response.text);
@@ -42,8 +43,13 @@ class Contact extends Component {
         }})
       })
   }
+  verifiedCaptcha=(response)=>{
+    if(response){
+        this.props.dispatch({type:"UPDATE_STORE", name:"captchaVerified", value:true})
+    }
+  }
   render() {
-    var {fname, lname, mail, subject, message, errMessage} = this.props.simpleReducer
+    var {fname, lname, mail, subject, message, errMessage, captchaVerified} = this.props.simpleReducer
     return(
         <section id="contact">
           <div class="title">
@@ -72,13 +78,20 @@ class Contact extends Component {
                 <p>Type your message <span>&#42;</span></p>
                 <textarea placeholder="Message" name="message" value={message} onChange={this.updateStore}/>
               </div>
+              <Recaptcha
+                sitekey="6LcTrPgUAAAAAFfn6TLUm0erW9CTzXPXqnZ9Zvrr"
+                render="explicit"
+                verifyCallback={this.verifiedCaptcha}
+                onloadCallback={()=>{console.log("HAS LOADED CAPTCHA")}}
+              />
               <div>
-                <button onClick={this.submitContact}>Submit</button>
+                <button onClick={this.submitContact}
+                disabled={!captchaVerified}>Submit</button>
               </div>
               {errMessage && <div>{errMessage}</div>}
             </div>
             <div className="contactImg">
-              <img src={mailbox} className='img'/>
+              <img src={mailbox} className='img' alt=""/>
               {/* <img src={mailIcon} className='icon' /> */}
             </div>
           </div>
