@@ -1,0 +1,91 @@
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import '../Global.scss';
+import mailbox from '../Globals/mailBox.jpg';
+import emailjs from 'emailjs-com';
+
+const mapStateToProps = state => ({
+  ...state
+})
+
+
+class Contact extends Component {
+  updateStore = (event) => {
+    this.props.dispatch({type:"UPDATE_STORE", name:event.target.name, value:event.target.value})
+   }
+  submitContact = () =>{
+    var {fname, lname, mail, subject, message} = this.props.simpleReducer
+    console.log("test",fname, lname, mail, subject, message)
+    let templateParams = {
+      subject: subject,
+      html: `
+      <h2>From ${fname} ${lname},</h2>
+      <p>Email: ${mail}</p>
+      <p>Message: ${message}</p>`}
+      
+    emailjs.send('gmail', 'contactformportfolio', templateParams, "user_AOqEsp5L6NpkcR7qV1jTn")
+      .then(response=> {
+        console.log('SUCCESS!', response.status, response.text);
+        this.props.dispatch({type:"UPDATE_WITH_STATE", newState:{
+          fname:"",
+          lname:"",
+          mail:"",
+          subject:"",
+          message:"",
+          errMessage:"Successfully submitted!"
+        }})
+      })
+      .catch(err=>{
+        console.log('FAILED...', err);
+        this.props.dispatch({type:"UPDATE_WITH_STATE", newState:{
+          errMessage:"Something went wrong..."
+        }})
+      })
+  }
+  render() {
+    var {fname, lname, mail, subject, message, errMessage} = this.props.simpleReducer
+    return(
+        <section id="contact">
+          <div class="title">
+            <h2>Contact</h2>
+          </div>
+          <div className="contact">
+            <div className="wrapForm">
+              <h3>Contact</h3>
+              <p>For all pricing or faq, please fill out the form below</p>
+              <div>
+                <p>Name <span>&#42;</span></p>
+                <div className='formNameWrap'>
+                  <input placeholder="First Name" name="fname" value={fname} onChange={this.updateStore}/>
+                  <input placeholder="Last Name" name="lname" value={lname} onChange={this.updateStore}/>
+                </div>
+              </div>
+              <div>
+                <p>Email Address <span>&#42;</span></p>
+                <input placeholder="Email Address" name="mail" value={mail} onChange={this.updateStore}/>
+              </div>
+              <div>
+                <p>Subject <span>&#42;</span></p>
+                <input placeholder="Subject" name="subject" value={subject} onChange={this.updateStore}/>
+              </div>
+              <div>
+                <p>Type your message <span>&#42;</span></p>
+                <textarea placeholder="Message" name="message" value={message} onChange={this.updateStore}/>
+              </div>
+              <div>
+                <button onClick={this.submitContact}>Submit</button>
+              </div>
+              {errMessage && <div>{errMessage}</div>}
+            </div>
+            <div className="contactImg">
+              <img src={mailbox} className='img'/>
+              {/* <img src={mailIcon} className='icon' /> */}
+            </div>
+          </div>
+        </section>
+   );
+  }
+ }
+ 
+
+export default connect(mapStateToProps)(Contact);

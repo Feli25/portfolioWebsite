@@ -17,6 +17,8 @@ import githubLogo from '../Globals/github.png';
 import nodejsLogo from '../Globals/nodejs.png';
 import mongodbLogo from '../Globals/mongodb.png';
 
+import Contact from './Contact'
+
 const mapStateToProps = state => ({
   ...state
 })
@@ -41,12 +43,12 @@ class HomePage extends Component {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a href="#contact">Resume</a>
+          <a href="https://drive.google.com/file/d/1G957MPaKR0s-U1dbywuSh_NLad7fPArF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         {/* <img src={image} width="60%" /> */}
         {/* Me */}
         <section id="me">
-          <div  class="title"class="title">
+          <div  class="title">
             <h2>About me</h2>
           </div>
           <article>
@@ -62,7 +64,7 @@ class HomePage extends Component {
                 </p>
               </div>
               <div>
-                <img src={feliPic} width='90%' />
+                <img src={feliPic} width='90%' alt=""/>
               </div>
           </article>
         </section>
@@ -119,25 +121,25 @@ class HomePage extends Component {
                 <h3>HS - Be strong</h3>
                   A website programmed in the course of a few hours, during the Covid-19 pandemic. 
                   This was built for a hospital to be able to answer to questions related to Covid-19 without the people needing to come in house or block the phone lines.
-                  You can register as a user and ask a question, certified doctors in quarantine at home can go and answer them.
+                  You can register as a user and ask a question, certified doctors in quarantine at home can answer them.
                   <br/>
-                  <a href="http://www.elviras-naehspass.com/">www.elviras-naehspass.com</a>
+                  <a href="https://hsmedizinischehilfe.herokuapp.com/">hsmedizinischehilfe.herokuapp.com</a>
                 </p>
               </div>
               <div>
               <p>
-                <h3>Project 3</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Malesuada fames ac turpis egestas sed tempus urna et pharetra.
-                At tempor commodo ullamcorper a lacus vestibulum sed arcu.
+                <h3>Pin Point</h3>
+                  A social website, where you can post pictures and view posts of others, all based on a map. Comes from the idea of a digital travel diary.
+                  You can make each post public or private and many more features.
+                  <a href="https://ironpinpoint.herokuapp.com/">ironpinpoint.herokuapp.com</a>
                 </p>
               </div>
               <div className='rightBox'>
                 <p>
-                <h3>Project 4</h3>
-                Turpis nunc eget lorem dolor sed viverra. Eu lobortis elementum nibh tellus molestie nunc non.
-                Placerat vestibulum lectus mauris ultrices eros in cursus. Vitae congue eu consequat ac felis donec et odio pellentesque.
-                Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit.
+                <h3>Bublearn</h3>
+                  Game for kids to learn reading and writing. They need to spell words by popping the bubbles found on the right side. 
+                  Both German and English.
+                  <a href="https://feli25.github.io/BublearnGame/">feli25.github.io/BublearnGame</a>
                 </p>
               </div>
             </article>
@@ -210,41 +212,7 @@ class HomePage extends Component {
             </article>
         </section>
 
-        {/* Contact */}
-        <section id="contact">
-          <div class="title">
-            <h2>Contact</h2>
-          </div>
-          <div className="contact">
-            <div className="wrapForm">
-              <h3>Contact</h3>
-              <p>For all pricing or faq, please fill out the form below</p>
-              <div>
-                <p>Name <span>&#42;</span></p>
-                <div className='formNameWrap'>
-                  <input placeholder="First Name" />
-                  <input placeholder="Last Name" />
-                </div>
-              </div>
-              <div>
-                <p>Email Address <span>&#42;</span></p>
-                <input placeholder="Email Address" />
-              </div>
-              <div>
-                <p>Subject <span>&#42;</span></p>
-                <input placeholder="Subject" />
-              </div>
-              <div>
-                <p>Type your message <span>&#42;</span></p>
-                <textarea placeholder="Message" />
-              </div>
-            </div>
-            <div className="contactImg">
-              <img src={mailbox} className='img'/>
-              {/* <img src={mailIcon} className='icon' /> */}
-            </div>
-          </div>
-        </section>
+        <Contact/>
       </div>
       <div className="homeFooter">
         <a href="" className="homeFooterText">Back to top</a>
