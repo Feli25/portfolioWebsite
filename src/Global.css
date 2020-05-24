@@ -26,106 +26,51 @@
   border-radius: 20%
 }
 
-/* background-color: #93DB5D; */
 .home{
+  background-color: grey;
   display: flex;
   flex-direction: column;
 }
 
 .homeHeader{
-  background-color: white;
-  height:50px;
+  color:black;
+}
+
+.homeNavBar{
+  background-color: lightgray;
+  color:black;
   width:100%;
   display: flex;
-  padding: 5px;
   justify-content: center;
-  border-bottom: 2px solid black;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size:30px;
-  /* flex-direction: column; */
-  position: fixed;
-  top: 0;
-  width: 100%
 }
-.homeHeaderImage{
-  /* align-self: flex-start; */
-}
-.homeHeaderTitle{
-  /* align-self: center; */
-}
-
-.homeNavBox{
-  position: fixed;
-  bottom:0;
-  right:0;
-  width:10%;
+.homeNavBarButtons{
+  width:50%;
+  background-color: green;
   display: flex;
-  flex-direction: column;
-  /* border: 1px solid black; */
-  margin-bottom: 20px;
-}
-.homeNavBoxButtons{
-  border: 2px solid #93DB5D;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  height:30px;
-  font-size: 20px;
-  padding: 5px 5px 5px 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.homeNavBoxButtons:hover{
-  color:#9EC967;
-  text-shadow: 3px 3px 4px #93DB5D;
-}
-
-.homeBody{
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .me,.experience,.projects,.skills,.contact{
   width:100%;
   height:400px;
-  padding-top: 80px;
-  display: flex;
 }
 .me{
-  /* background-color: #C4CADD; */
+  background-color: #C4CADD;
 }
 .experience{
-  /* background-color: blue; */
+  background-color: blue;
 }
 .projects{
-  /* background-color: white; */
+  background-color: white;
 }
 .skills{
-  /* background-color: chartreuse; */
+  background-color: chartreuse;
 }
 .contact{
-  /* background-color: red; */
+  background-color: red;
 }
-
-.bodySectionTitle{
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  color: #93DB5D;
-  background-color: white;
-  height:40px;
-  font-size: 30px;
-  padding: 5px 20px 5px 5px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
 .homeFooter{
-
-}
-.homeFooterText{
-  color:black;
-  text-decoration: none;
+  color:black
 }
 

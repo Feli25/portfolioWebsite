@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.css';
-import image from '../Globals/sample.png'
+import image from '../Globals/linkedin.png'
 
 const mapStateToProps = state => ({
   ...state
@@ -15,43 +15,25 @@ class HomePage extends Component {
    return (
     <div className="home">
       <div className="homeHeader">
-        <img src={image} width="20px" height="20px"/>
-        <div className="homeHeaderTitle">
-          Felicitas Deutges
+        Felicitas Deutges
+      </div>
+      <div className="homeNavBar">
+        <div className="homeNavBarButtons">
+          <a href="#me" style={{color:"white"}}>Me</a>
+          <a href="#experience" style={{color:"white"}}>Experience</a>
+          <a href="#projects" style={{color:"white"}}>Projects</a>
+          <a href="#skills" style={{color:"white"}}>Skills</a>
+          <a href="#contact" style={{color:"white"}}>Contact</a>
+          <a href="#contact" style={{color:"white"}}>-> Resume</a>
         </div>
       </div>
-      <div className="homeNavBox">
-        <a className="homeNavBoxButtons" href="#me">Me</a>
-        <a className="homeNavBoxButtons" href="#experience">Experience</a>
-        <a className="homeNavBoxButtons" href="#projects">Projects</a>
-        <a className="homeNavBoxButtons" href="#skills">Skills</a>
-        <a className="homeNavBoxButtons" href="#contact">Contact</a>
-        <a className="homeNavBoxButtons" href="#contact">-> Resume</a>
-      </div>
-      <div className="homeBody">
-        <a name="me"></a>
-        <div className="me">
-          <div className="bodySectionTitle">Me</div>
-        </div>
-        <a name="experience"></a>
-        <div className="experience">
-          <div className="bodySectionTitle">Experience</div>
-        </div>
-        <a name="projects"></a>
-        <div className="projects">
-          <div className="bodySectionTitle">Projects</div>
-        </div>
-        <a name="skills"></a>
-        <div className="skills">
-          <div className="bodySectionTitle">Skills</div>
-        </div>
-        <a name="contact"></a>
-        <div className="contact">
-          <div className="bodySectionTitle">Contact</div>
-        </div>
-      </div>
+      <div className="me"><a name="me">Me</a></div>
+      <div className="experience"><a name="experience">Experience</a></div>
+      <div className="projects"><a name="projects">Projects</a></div>
+      <div className="skills"><a name="skills">Skills</a></div>
+      <div className="contact"><a name="contact">Contact</a></div>
       <div className="homeFooter">
-        <a href="" className="homeFooterText">Back to top</a>
+        <a href="" style={{color:"white"}}>Back to top</a>
       </div>
     </div>
    );
