@@ -27,7 +27,7 @@ class HomePage extends Component {
           <a href="#projects" style={{color:"white"}}>Projects</a>
           <a href="#skills" style={{color:"white"}}>Skills</a>
           <a href="#contact" style={{color:"white"}}>Contact</a>
-          <a href="#contact" style={{color:"white"}}>Resume</a>
+          <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>Resume</a>
         </div>
       </div>
       <div className="me"><a name="me">Me</a></div>
