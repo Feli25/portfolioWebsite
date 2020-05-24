@@ -76,7 +76,8 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
 .homeHeaderTitle{
   margin: 15px auto 0 20px;
 	background: $headerTitle;
-	-webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
   font-weight: 200;
@@ -134,7 +135,7 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 100px;
+      margin-top: 50px;
       margin-left: auto;
       margin-right: auto;
       width:80%;
@@ -151,7 +152,7 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 50px;
+        padding-top:100px;
         .title {
           text-align: right;
           flex: 0.5;
@@ -169,7 +170,6 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
         article{
           display: flex;
           justify-content: space-between;
-          margin-top: 40px;
           flex:7;
           
           div{
@@ -191,7 +191,6 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
             }
           }
           .skills{
-            margin-top: 100px;
             .wrapSkills{
               display:flex;
               .skillsBox{
@@ -214,12 +213,20 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
               text-align: left;
             }
           }
+          .projects{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+            .twoContBox{
+              display: flex;
+              flex-direction: column;
+            }
+          }
         }
         .contact {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-top: 100px;
           flex:5;
           .wrapForm{
             text-align: left;
@@ -301,13 +308,18 @@ $headerBoxShadow: 0px 2px 120px rgb(254, 255, 255);
             // }
           }
         }
+        a{
+          text-decoration: underline;
+          color:inherit;
+          text-decoration-style: dotted;
+        }
       }
     }
 
 
 .homeFooter{
   border-top: 1px solid rgb(80, 80, 80);
-  padding: 90px 0px;
+  padding: 60px 0px;
 }
 .homeFooter > a{
   margin-bottom: 100px;

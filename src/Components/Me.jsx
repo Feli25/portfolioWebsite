@@ -22,13 +22,10 @@ class Me extends Component {
           <article>
               <div>
                 <p>
-                <h3>Intro</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Malesuada fames ac turpis egestas sed tempus urna et pharetra.
-                At tempor commodo ullamcorper a lacus vestibulum sed arcu.
-                Sed turpis tincidunt id aliquet risus feugiat.
-                Quisque sagittis purus sit amet volutpat. Velit sed ullamcorper morbi tincidunt ornare massa.
-                Sit amet massa vitae tortor. 
+                <h3>Hello!</h3>
+                My name is Felicitas Deutges, and I am a Berlin based Fullstack Web Developer. 
+                I primarily user JavaScript, with React and Node.js, and SQL. But picking up new frameworks or technologies is not a problem.<br/>
+                I enjoy building everything, from small business sites to rich interactive web apps. If you are a business seaking a web presence or an employer looking to hire, you can get in touch with me <a href="#contact">here</a>.
                 </p>
               </div>
               <div>

@@ -34,7 +34,7 @@ class HomePage extends Component {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1G957MPaKR0s-U1dbywuSh_NLad7fPArF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         {/* <img src={image} width="60%" /> */}
         {/* Me */}

@@ -11,6 +11,8 @@ import gitLogo from '../Globals/git.png';
 import githubLogo from '../Globals/github.png';
 import nodejsLogo from '../Globals/nodejs.png';
 import mongodbLogo from '../Globals/mongodb.png';
+import bitbucket from '../Globals/bitbucket.png';
+import sql from '../Globals/MySQL.svg';
 
 const mapStateToProps = state => ({
   ...state
@@ -53,8 +55,12 @@ class Skills extends Component {
                     <img src={htmlLogo} alt=""/>
                   </div>
                   <div>
-                    <h3>CSS</h3>
+                    <h3>CSS/SCSS</h3>
                     <img src={cssLogo} alt=""/>
+                  </div>
+                  <div>
+                    <h3>PHP</h3>
+                    <img src={phpLogo} alt=""/>
                   </div>
                 </div>
 
@@ -64,8 +70,8 @@ class Skills extends Component {
                     <img src={nodejsLogo} alt=""/>
                   </div>
                   <div>
-                    <h3>PHP</h3>
-                    <img src={phpLogo} alt=""/>
+                    <h3>SQL/MySQL</h3>
+                    <img src={sql} alt=""/>
                   </div>
                   <div>
                     <h3>MongoDB</h3>
@@ -81,6 +87,10 @@ class Skills extends Component {
                   <div>
                     <h3>Github</h3>
                     <img src={githubLogo} alt=""/>
+                  </div>
+                  <div>
+                    <h3>Bitbucket</h3>
+                    <img src={bitbucket} alt=""/>
                   </div>
                 </div>
                 </div>

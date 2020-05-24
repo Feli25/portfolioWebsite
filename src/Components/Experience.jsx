@@ -20,24 +20,19 @@ class Experience extends Component {
           <article>
               <div>
               <p>
-                <h3>Intro</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Malesuada fames ac turpis egestas sed tempus urna et pharetra.
-                At tempor commodo ullamcorper a lacus vestibulum sed arcu.
-                Sed turpis tincidunt id aliquet risus feugiat.
-                Quisque sagittis purus sit amet volutpat. Velit sed ullamcorper morbi tincidunt ornare massa.
-                Sit amet massa vitae tortor. 
+                <h3>Work Experience</h3>
+                Currently I am full time employed, working on Full Stack Projects in React, Node and SQL. 
+                I have gained extensive experience with applications and the development process in a fast changing environment with real-life products, developed multiple user interfaces and complex logics in backend and frontend.
+                Besides developing I have been able to take over Project Managment tasks and hiring new members for our team. 
+                I have been doing code reviews for all of my team members and been architectural lead in a few of our biggest projects.
                 </p>
               </div>
               <div>
                 <p>
-                <h3>Intro 2</h3>
-                Turpis nunc eget lorem dolor sed viverra. Eu lobortis elementum nibh tellus molestie nunc non.
-                Placerat vestibulum lectus mauris ultrices eros in cursus. Vitae congue eu consequat ac felis donec et odio pellentesque.
-                Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit.
-                Egestas maecenas pharetra convallis posuere morbi leo urna molestie at.
-                Eu consequat ac felis donec et odio pellentesque. Tincidunt arcu non sodales neque sodales ut.
-                Sit amet venenatis urna cursus eget nunc scelerisque.
+                <h3>Side Projects</h3>
+                As you can see in the next section, I am also constantly looking for challenges when working on side projects. 
+                By creating fun and real projects I can learn new technologies or deepen my understanding for technologies I already know.
+                The list of side projects is constantly growing.
                 </p>
               </div>
             </article>
