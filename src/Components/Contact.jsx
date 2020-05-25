@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
 import mailbox from '../Globals/mailBox.jpg';
+import emailjs from 'emailjs-com';
 
 const mapStateToProps = state => ({
   ...state
@@ -12,8 +13,7 @@ class Contact extends Component {
   updateStore = (event) => {
     this.props.dispatch({type:"UPDATE_STORE", name:event.target.name, value:event.target.value})
    }
-  submitContact = () =>{
-    console.log("SUBMIT")
+   submitContact = () =>{
     var {fname, lname, mail, subject, message} = this.props.simpleReducer
     var emailSplit = mail.split("")
     if(!fname || !lname || !mail || !subject || !message || !emailSplit.includes("@") || !emailSplit.includes(".")){
@@ -21,6 +21,31 @@ class Contact extends Component {
       return;
     }
     this.props.dispatch({type:"UPDATE_STORE", name:"errMessage", value:"Sending...."})
+    let templateParams = {
+      subject: subject,
+      message: `
+      <h2>From ${fname} ${lname},</h2>
+      <p>Email: ${mail}</p>
+      <p>Message: ${message}</p>`}
+
+    emailjs.send('gmail', 'contactformportfolio', templateParams, "user_AOqEsp5L6NpkcR7qV1jTn")
+      .then(response=> {
+        console.log('SUCCESS!', response.status, response.text);
+        this.props.dispatch({type:"UPDATE_WITH_STATE", newState:{
+          fname:"",
+          lname:"",
+          mail:"",
+          subject:"",
+          message:"",
+          errMessage:"Successfully submitted!"
+        }})
+      })
+      .catch(err=>{
+        console.log('FAILED...', err);
+        this.props.dispatch({type:"UPDATE_WITH_STATE", newState:{
+          errMessage:"Something went wrong..."
+        }})
+      })
   }
   render() {var {fname, lname, mail, subject, message, errMessage, captchaVerified} = this.props.simpleReducer
   return(
