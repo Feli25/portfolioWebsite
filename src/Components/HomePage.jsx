@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 import '../Global.scss';
 import image from '../Globals/LogoRaw.png'
 
+import Contact from './Contact'
+import Skills from './Skills'
+import Projects from './Projects'
+import Experience from './Experience'
+import Me from './Me'
+
 const mapStateToProps = state => ({
   ...state
 })
@@ -30,11 +36,11 @@ class HomePage extends Component {
           <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>Resume</a>
         </div>
       </div>
-      <div className="me"><a name="me">Me</a></div>
-      <div className="experience"><a name="experience">Experience</a></div>
-      <div className="projects"><a name="projects">Projects</a></div>
-      <div className="skills"><a name="skills">Skills</a></div>
-      <div className="contact"><a name="contact">Contact</a></div>
+      <Me/>
+      <Experience/>
+      <Projects/>
+      <Skills/>
+      <Contact/>
       <div className="homeFooter">
         <a href="#me" style={{color:"white"}}>Back to top</a>
       </div>
