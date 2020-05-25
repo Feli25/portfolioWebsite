@@ -26,23 +26,23 @@ class HomePage extends Component {
         Felicitas Deutges
         </div>
       </div>
-      <div className="homeNavBar">
-        <div className="homeNavBarButtons">
-          <a href="#me" style={{color:"white"}}>Me</a>
-          <a href="#experience" style={{color:"white"}}>Experience</a>
-          <a href="#projects" style={{color:"white"}}>Projects</a>
-          <a href="#skills" style={{color:"white"}}>Skills</a>
-          <a href="#contact" style={{color:"white"}}>Contact</a>
-          <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>Resume</a>
+      <div className="homeBody">
+        <div className="homeNavBox">
+          <a href="#me">Me</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
+        <Me/>
+        <Experience/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
       </div>
-      <Me/>
-      <Experience/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
       <div className="homeFooter">
-        <a href="#me" style={{color:"white"}}>Back to top</a>
+        <a href="#me" className="homeFooterText">Back to top</a>
       </div>
     </div>
    );
