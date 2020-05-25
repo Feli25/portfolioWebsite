@@ -1,7 +1,13 @@
 const initialState = {
   showPage:"construction",
   // showPage:"home",
-  // test2:"hey"
+  fname:"",
+  lname:"",
+  mail:"",
+  subject:"",
+  message:"",
+  errMessage:"",
+  captchaVerified:false
 }
 
 export default (state = initialState, action) => {
@@ -11,6 +17,13 @@ export default (state = initialState, action) => {
       ...state,
      [action.name]: action.value
     }
+    case 'UPDATE_WITH_STATE':
+      var oldState = {...state}
+      var keys = Object.keys(action.newState)
+      keys.forEach(key=>{
+        oldState[key]=action.newState[key]
+      })
+      return oldState
    default:
     return state
   }
