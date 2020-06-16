@@ -1,21 +1,13 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import CarouselContainer from './Carousel';
 import '../Global.scss';
+import image from '../Globals/LogoRaw.png'
 
-// import mailbox from '../Globals/mailBox.jpg';
-// import feliPic from '../Globals/Profile-pic.png';
-// import jsLogo from '../Globals/js.png';
-// import reactLogo from '../Globals/react.png';
-// import reduxLogo from '../Globals/redux.png';
-// import phpLogo from '../Globals/php.png';
-// import htmlLogo from '../Globals/html.png';
-// import cssLogo from '../Globals/css.png';
-// import gitLogo from '../Globals/git.png';
-// import githubLogo from '../Globals/github.png';
-// import nodejsLogo from '../Globals/nodejs.png';
-// import mongodbLogo from '../Globals/mongodb.png';
-
+import Contact from './Contact'
+import Skills from './Skills'
+import Projects from './Projects'
+import Experience from './Experience'
+import Me from './Me'
 
 const mapStateToProps = state => ({
   ...state
@@ -29,9 +21,9 @@ class HomePage extends Component {
    return (
     <div className="home">
       <div className="homeHeader">
-        {/* <img src={image} width="20px" height="20px"/> */}
         <div className="homeHeaderTitle">
-          Felicitas Deutges
+        <img src={image} className="homeHeaderImage" alt=""/>
+        Felicitas Deutges
         </div>
       </div>
       <div className="homeBody">
@@ -41,15 +33,16 @@ class HomePage extends Component {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a href="#contact">Resume</a>
+          <a href="https://drive.google.com/file/d/19WHt13GpigzjlSWyPR5IpdWayys2wx32/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
-
-        <CarouselContainer />
-
-        
+        <Me/>
+        <Experience/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
       </div>
       <div className="homeFooter">
-        <a href="" className="homeFooterText">Back to top</a>
+        <a href="#me" className="homeFooterText">Back to top</a>
       </div>
     </div>
    );
