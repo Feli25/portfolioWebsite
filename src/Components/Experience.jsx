@@ -14,24 +14,28 @@ class Experience extends Component {
   render() {
     return(
       <section id="experience">
-          <div class="title">
+          <div className="title">
             <h2>Experience</h2>
           </div>
           <article>
-              <div>
+              <div className='text'>
+							<div className='verticalText'>Work Experience</div>
               <p>
-                <h3>Work Experience</h3>
-                Currently I am full time employed, working on Full Stack Projects in React, Node and SQL. 
-                I have gained extensive experience with applications and the development process in a fast changing environment with real-life products, developed multiple user interfaces and complex logics in backend and frontend.
-                Besides developing I have been able to take over Project Managment tasks and hiring new members for our team. 
-                I have been doing code reviews for all of my team members and been architectural lead in a few of our biggest projects.
+                &nbsp;&nbsp;Currently I am full time employed, working on <span className='hightLight'>Full Stack</span> Projects in <span className='hightLight'>React</span>, <span className='hightLight'>Node</span> and <span className='hightLight'>SQL</span>.
+								<br/> 
+                I have gained extensive experience with applications and the development process in a fast changing environment with real-life products,
+								developed multiple user interfaces and complex logics in backend and frontend.
+                <br/>
+								Besides developing I have been able to take over <span className='hightLight'>Project Managment</span> tasks and hiring new members for our team. 
+                I have been doing <span className='hightLight'>code reviews</span> for all of my team members and been architectural lead in a few of our biggest projects.
                 </p>
               </div>
-              <div>
+							<br/>
+              <div className='text'>
+								<div className='verticalText'>Side Projects</div>
                 <p>
-                <h3>Side Projects</h3>
-                As you can see in the next section, I am also constantly looking for challenges when working on side projects. 
-                By creating fun and real projects I can learn new technologies or deepen my understanding for technologies I already know.
+                &nbsp;&nbsp;As you can see in the next section, I am also constantly looking for challenges when working on side projects. 
+								By creating fun and real projects I can learn new technologies or deepen my understanding for technologies I already know.
                 The list of side projects is constantly growing.
                 </p>
               </div>

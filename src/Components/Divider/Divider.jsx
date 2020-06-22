@@ -3,6 +3,6 @@ import './style.scss';
 
 export default function Divider(){
     return<>
-       <div class="divider"><span></span><span>&#10038;</span><span></span></div>
+       <div className="divider"><span></span><span>&#10038;</span><span></span></div>
         </>
 };

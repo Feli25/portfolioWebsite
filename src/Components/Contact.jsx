@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import '../Global.scss';
-import mailbox from '../Globals/mailBox.jpg';
+import '../Mobile.scss';
+// import '../Global.scss';
+// import mailbox from '../Globals/mailBox.jpg';
 import emailjs from 'emailjs-com';
 import Recaptcha from "react-recaptcha";
 
@@ -57,12 +58,12 @@ class Contact extends Component {
     var {fname, lname, mail, subject, message, errMessage, captchaVerified} = this.props.simpleReducer
       return(
         <section id="contact">
-          <div class="title">
+          <div className="title">
             <h2>Contact</h2>
           </div>
           <div className="contact">
             <div className="wrapForm">
-              <h3>Contact</h3>
+              {/* <h3>Contact</h3> */}
               <p>For all pricing or faq, please fill out the form below</p>
               <div>
                 <p>Name <span>&#42;</span></p>
@@ -96,9 +97,9 @@ class Contact extends Component {
               </div>
               {errMessage && <div>{errMessage}</div>}
             </div>
-            <div className="contactImg">
+            {/* <div className="contactImg">
               <img src={mailbox} className='img' alt=""/>
-            </div>
+            </div> */}
           </div>
         </section>
       ); 
