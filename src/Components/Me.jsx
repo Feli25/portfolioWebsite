@@ -20,7 +20,7 @@ class Me extends Component {
 					{/* <div className='verticalText'>About Me</div> */}
 					<div className="title">
 						<h2>Hello, <br />I'm Felicitas Deutges!
-						<br />Fullstack Web Deleloper.</h2>
+						<br />Fullstack Web Developer.</h2>
 					</div>
 					<div>
 					</div>
