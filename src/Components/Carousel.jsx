@@ -124,7 +124,7 @@ class CarouselContainer extends Component {
                 {/* Contact */}
                 <div>
                     <section id="contact">
-                        <div className="sectionTitle">
+                        <div class="sectionTitle">
                             <h2>Contact</h2>
                         </div>
                         <div className="contact">

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-// import '../Global.scss';
-import '../Mobile.scss';
+import '../Global.scss';
 import jsLogo from '../Globals/js.png';
 import reactLogo from '../Globals/react.png';
 import reduxLogo from '../Globals/redux.png';
@@ -27,70 +26,70 @@ class Skills extends Component {
   render() {
     return(
       <section id="skills">
-        <div className="title">
+        <div class="title">
           <h2>Skills</h2>
         </div>
         <article>
           <div className='skills'>
               <div className='wrapSkills'>
                 <div className='skillsBox'>
-                <div style={{display:'flex', flexDirection:'column'}} className='skillsMobile'>
+                <div style={{display:'flex', flexDirection:'column'}}>
                   <div>
                     <h3>JavaScript</h3>
-                    <img src={jsLogo} alt="JavaScript logo"/>
+                    <img src={jsLogo} alt=""/>
                   </div>
                   <div>
                     <h3>React</h3>
-                    <img src={reactLogo} alt="React logo"/>
+                    <img src={reactLogo} alt=""/>
                   </div>
                   <div>
                     <h3>Redux</h3>
-                    <img src={reduxLogo} alt="Redux logo"/>
+                    <img src={reduxLogo} alt=""/>
                   </div>
                 </div>
                 
-                <div style={{display:'flex', flexDirection:'column'}} className='skillsMobile'>
+                <div style={{display:'flex', flexDirection:'column'}}>
                   <div>
                     <h3>HTML</h3>
-                    <img src={htmlLogo} alt="HTML logo"/>
+                    <img src={htmlLogo} alt=""/>
                   </div>
                   <div>
                     <h3>CSS/SCSS</h3>
-                    <img src={cssLogo} alt="CSS logo"/>
+                    <img src={cssLogo} alt=""/>
                   </div>
                   <div>
                     <h3>PHP</h3>
-                    <img src={phpLogo} alt="PHP logo"/>
+                    <img src={phpLogo} alt=""/>
                   </div>
                 </div>
 
-                <div style={{display:'flex', flexDirection:'column'}} className='skillsMobile'>
+                <div style={{display:'flex', flexDirection:'column'}}>
                   <div>
                     <h3>NodeJS</h3>
-                    <img src={nodejsLogo} alt="NodeJS logo"/>
+                    <img src={nodejsLogo} alt=""/>
                   </div>
                   <div>
                     <h3>SQL/MySQL</h3>
-                    <img src={sql} alt="SQL logo"/>
+                    <img src={sql} alt=""/>
                   </div>
                   <div>
                     <h3>MongoDB</h3>
-                    <img src={mongodbLogo} alt="MongoDB logo"/>
+                    <img src={mongodbLogo} alt=""/>
                   </div>
                 </div>
 
-                <div style={{display:'flex', flexDirection:'column'}} className='skillsMobile'>
+                <div style={{display:'flex', flexDirection:'column'}}>
                   <div>
                     <h3>Git</h3>
-                    <img src={gitLogo} alt="Git logo"/>
+                    <img src={gitLogo} alt=""/>
                   </div>
                   <div>
                     <h3>Github</h3>
-                    <img src={githubLogo} alt="Github logo"/>
+                    <img src={githubLogo} alt=""/>
                   </div>
                   <div>
                     <h3>Bitbucket</h3>
-                    <img src={bitbucket} alt="Bitbucket logo"/>
+                    <img src={bitbucket} alt=""/>
                   </div>
                 </div>
                 </div>
