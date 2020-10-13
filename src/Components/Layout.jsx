@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-// import Construction from './Construction';
+import Construction from './Construction';
 import HomePage from './HomePage'
 
 const mapStateToProps = state => ({
@@ -13,13 +13,12 @@ class Layout extends Component {
     this.props.dispatch({type:"UPDATE_STORE", name:event.target.name, value:event.target.value})
   }
   render() {
-    // var currentPage = this.props.simpleReducer.showPage
+    var currentPage = this.props.simpleReducer.showPage
    return (
-    // <div className="Layout">
-    //   {currentPage === "construction" && <Construction/>}
-    //   {currentPage === "home" && <HomePage/>}
-    // </div>
-    <HomePage/>
+    <div className="Layout">
+      {currentPage === "construction" && <Construction/>}
+      {currentPage === "home" && <HomePage/>}
+    </div>
    );
   }
  }

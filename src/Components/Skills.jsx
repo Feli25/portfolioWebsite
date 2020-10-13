@@ -26,14 +26,15 @@ class Skills extends Component {
   render() {
     return(
       <section id="skills">
-        <div class="title">
-          <h2>Skills</h2>
-        </div>
-        <article>
+      <div class="title">
+        <h2>Skills</h2>
+      </div>
+      <article>
           <div className='skills'>
               <div className='wrapSkills'>
                 <div className='skillsBox'>
                 <div style={{display:'flex', flexDirection:'column'}}>
+
                   <div>
                     <h3>JavaScript</h3>
                     <img src={jsLogo} alt=""/>

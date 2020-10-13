@@ -22,8 +22,8 @@ class HomePage extends Component {
     <div className="home">
       <div className="homeHeader">
         <div className="homeHeaderTitle">
-          <img src={image} className="homeHeaderImage" alt=""/>
-          Felicitas Deutges
+        <img src={image} className="homeHeaderImage" alt=""/>
+        Felicitas Deutges
         </div>
       </div>
       <div className="homeBody">
