@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import '../Global.scss';
-import jsLogo from '../Globals/js.png';
-import reactLogo from '../Globals/react.png';
-import reduxLogo from '../Globals/redux.png';
-import phpLogo from '../Globals/php.png';
-import htmlLogo from '../Globals/html.png';
-import cssLogo from '../Globals/css.png';
-import gitLogo from '../Globals/git.png';
-import githubLogo from '../Globals/github.png';
-import nodejsLogo from '../Globals/nodejs.png';
-import mongodbLogo from '../Globals/mongodb.png';
-import bitbucket from '../Globals/bitbucket.png';
-import sql from '../Globals/MySQL.svg';
+import jsLogo from '../globals/js.png';
+import reactLogo from '../globals/react.png';
+import reduxLogo from '../globals/redux.png';
+import phpLogo from '../globals/php.png';
+import htmlLogo from '../globals/html.png';
+import cssLogo from '../globals/css.png';
+import gitLogo from '../globals/git.png';
+import githubLogo from '../globals/github.png';
+import nodejsLogo from '../globals/nodejs.png';
+import mongodbLogo from '../globals/mongodb.png';
+import bitbucket from '../globals/bitbucket.png';
+import sql from '../globals/MySQL.svg';
 
 const mapStateToProps = state => ({
   ...state

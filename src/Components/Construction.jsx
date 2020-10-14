@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import '../Global.scss';
-import image from '../Globals/linkedin.png'
+import image from '../globals/linkedin.png'
+import '../stylesheets/construction.scss';
 
 const mapStateToProps = state => ({
   ...state
@@ -18,7 +18,10 @@ class Construction extends Component {
       <h5>And thank you for visiting my website</h5>
       <p>This page is currently still under construction, something amazing will appear here soon.</p>
       <p>Meanwhile, you can check out my Linked In!</p>
-      <button className="constructionButton" onClick={()=>window.location.href="https://www.linkedin.com/in/felicitas-deutges-429682173/"}><img src={image} alt="Linked In" className="constructionImage"/>Click here</button>
+      <button onClick={()=>window.location.href="https://www.linkedin.com/in/felicitas-deutges-429682173/"}>
+        <img src={image} alt="Linked In"/>
+        Click here
+      </button>
     </div>
    );
   }

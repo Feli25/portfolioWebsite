@@ -1,6 +1,6 @@
 {
-  "name": "reduxportfolio",
-  "version": "0.1.0",
+  "name": "felisportfolio",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "emailjs-com": "^2.4.1",

@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import '../Global.scss';
-import mailbox from '../Globals/mailBox.jpg';
+import mailbox from '../globals/mailBox.jpg';
 import emailjs from 'emailjs-com';
-import Recaptcha from "react-recaptcha";
+// import Recaptcha from "react-recaptcha";
 
 const mapStateToProps = state => ({
   ...state
@@ -83,12 +82,12 @@ class Contact extends Component {
                 <p>Type your message <span>&#42;</span></p>
                 <textarea placeholder="Message" name="message" value={message} onChange={this.updateStore}/>
               </div>
-              <Recaptcha
+              {/* <Recaptcha
                 sitekey="6LcTrPgUAAAAAFfn6TLUm0erW9CTzXPXqnZ9Zvrr"
                 render="explicit"
                 verifyCallback={this.verifiedCaptcha}
                 onloadCallback={()=>{console.log("HAS LOADED CAPTCHA")}}
-              />
+              /> */}
               <div>
                 <button onClick={this.submitContact}
                 disabled={!captchaVerified}

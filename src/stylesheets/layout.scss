@@ -1,0 +1,74 @@
+//breakpoints:
+$bp-base: 320px;
+$bp-bigSmartphone: 425px;
+$bp-smallTablet: 650px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+$footer-height: 50px - 1px;
+$content-height: calc(100vh - #{$footer-height});
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+//     monospace;
+// }
+
+.home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    max-width: $bp-desktop;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .content {
+    min-height: $content-height;
+    padding-bottom: $footer-height;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: $footer-height;
+    width: 100%;
+    // background-color: darkgray;
+    // color: white;
+    border-top: 1px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    z-index: 10;
+
+    a {
+      text-decoration: underline;
+
+
+      &:first-child, &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
