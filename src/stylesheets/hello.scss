@@ -1,0 +1,53 @@
+@import './layout.scss';
+
+.hello {
+  background-image: url('../globals/bg-grey.jpg');
+  background-size: cover;
+  height: $content-height;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid black;
+  // color: white;
+
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-shadow: 2px 2px 2px rgba(255,255,255,1);
+  }
+
+  a {
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+    background-color: #e1e2dc;
+    box-shadow: 5px 5px 25px 0px rgba(255,255,255,1);
+  }
+
+  .logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    // background-color: white;
+    // border: 1px solid white;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.me {
+
+}

@@ -5,11 +5,14 @@ import '../stylesheets/layout.scss';
 import image from '../globals/LogoRaw.png'
 
 import Construction from './Construction';
-import Contact from './Contact'
-import Skills from './Skills'
-import Projects from './Projects'
-import Experience from './Experience'
+// import Skills from './Skills'
+// import Projects from './Projects'
+// import Experience from './Experience'
+import Hello from './Hello'
+import Tech from './Tech'
 import Me from './Me'
+// import Work from './Work'
+import Contact from './Contact'
 
 const mapStateToProps = state => ({
   ...state
@@ -43,6 +46,11 @@ class Home extends Component {
           <Projects/>
           <Skills/>
           <Contact/> */}
+          <Hello />
+          {/* <Tech /> */}
+          {/* <Me /> */}
+          {/* <Work /> */}
+          {/* <Contact /> */}
         </div>
         <footer>
           {/* <a href="#" className="homeFooterText">Back to top</a> */}
