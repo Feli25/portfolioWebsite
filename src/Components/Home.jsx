@@ -48,7 +48,7 @@ class Home extends Component {
           <Contact/> */}
           <Hello />
           {/* <Tech /> */}
-          {/* <Me /> */}
+          <Me />
           {/* <Work /> */}
           {/* <Contact /> */}
         </div>
