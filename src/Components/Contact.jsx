@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-import mailbox from '../globals/mailBox.jpg';
+import mailbox from '../Globals/mailBox.jpg';
 import emailjs from 'emailjs-com';
 import Recaptcha from "react-recaptcha";
 
