@@ -37,6 +37,7 @@ $rowBreakPoint: 800px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
 
   .homeHeader{
@@ -214,6 +215,15 @@ $rowBreakPoint: 800px;
         color:inherit;
         text-decoration-style: dotted;
       }
+      &.me {
+        .title {
+          display: none;
+
+          @media (min-width: $rowBreakPoint){
+            display: block;
+          }
+        }
+      }
       article > .projects {
         display:flex;
         flex-wrap:wrap;
@@ -233,31 +243,42 @@ $rowBreakPoint: 800px;
         }
       }
       article > .skills {
-        .wrapSkills{
-          display:flex;
-          .skillsBox{
-            text-align:right;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
-            background: $boxBackground;
-            margin:20px;
-            img{
-              width:30px;
-            }
-          }
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
+        background: $boxBackground;
+        margin: 20px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        img {
+          width: 60px;
+          margin: 10px;
         }
       }
       .contact {
+        // max-width: 100%;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // flex:5;
+        // flex-direction: column;
+        // @media (min-width: $rowBreakPoint){
+        //   flex-direction: row;
+        // }
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex:5;
-        @media (min-width:500px){
+        flex: 7;
+        flex-direction: column;
+        @media (min-width: $rowBreakPoint){
           flex-direction: row;
         }
-        flex-direction: column;
+
         .wrapForm{
+          max-width: 100%;
           text-align: left;
           padding: 20px;
           border-radius: 16px;
@@ -265,8 +286,8 @@ $rowBreakPoint: 800px;
           background: $boxBackground;
           // background: radial-gradient(circle 600px at 100% 0,#212121,#121212);
           margin:20px;
-          flex:1;
-          z-index:3;
+          // flex:1;
+          // z-index:3;
 
           h3{
             color:$lightBlueFont;
@@ -320,37 +341,44 @@ $rowBreakPoint: 800px;
               }
             }
           }
+
+          #g-recaptcha {
+            & > div {
+              width: 238px !important;
+            }
+
+            iframe {
+              width: 215px;
+              .rc-anchor-container {
+                width: 238px;
+                .rc-anchor-content {
+                  width: 150px;
+                  .rc-anchor-center-item.rc-anchor-checkbox-label {
+                    width: 90px;
+                  }
+                }
+                .rc-anchor-pt {
+                  width: 200px;
+                }
+              }
+            }
+          }
         }
         .contactImg{
-          @media (max-width:499px){
-            visibility:hidden;
-            height:0px;
-          }
-          flex:1;
-          .img{
-            width:250px;
-            box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
-            border-radius: 20px;
-            z-index: 3;
-          }
-          // .icon{
-          //   position: absolute;
-          //   top:200px;
-          //   left:550px;
-          //   width: 400px;
-          // }
-        }
-      }
-      &.me {
-        .title {
           display: none;
-
           @media (min-width: $rowBreakPoint){
             display: block;
+            flex:1;
+            .img{
+              width:250px;
+              box-shadow: 0 12px 24px -8px rgba(0,0,0,.8);
+              border-radius: 20px;
+              z-index: 3;
+            }
           }
+
         }
       }
-      
     }
   }
 

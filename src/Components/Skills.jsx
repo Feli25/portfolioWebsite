@@ -11,8 +11,12 @@ import gitLogo from '../globals/git.png';
 import githubLogo from '../globals/github.png';
 import nodejsLogo from '../globals/nodejs.png';
 import mongodbLogo from '../globals/mongodb.png';
-import bitbucket from '../globals/bitbucket.png';
-import sql from '../globals/MySQL.svg';
+import bitbucket from '../globals/bitbucketBig.png';
+import sql from '../globals/sql.png';
+import mySql from '../globals/MySQL.svg';
+import heroku from '../globals/heroku.png';
+import vuejsLogo from '../globals/vuejs.png';
+import laravelLogo from '../globals/laravel.png';
 
 const mapStateToProps = state => ({
   ...state
@@ -31,18 +35,28 @@ class Skills extends Component {
         </div>
         <article>
           <div className='skills'>
-            <img src={jsLogo} alt=""/>
-            <img src={reactLogo} alt=""/>
-            <img src={reduxLogo} alt=""/>
-            <img src={htmlLogo} alt=""/>
-            <img src={cssLogo} alt=""/>
-            <img src={phpLogo} alt=""/>
-            <img src={nodejsLogo} alt=""/>
-            <img src={sql} alt=""/>
-            <img src={mongodbLogo} alt=""/>
-            <img src={gitLogo} alt=""/>
-            <img src={githubLogo} alt=""/>
-            <img src={bitbucket} alt=""/>
+            <img src={cssLogo} alt="css"/>
+            <img src={htmlLogo} alt="html"/>
+            <img src={jsLogo} alt="js"/>
+            <img src={phpLogo} alt="php"/>
+            <img src={sql} alt="sql"/> 
+            <br/>
+
+            <img src={nodejsLogo} alt="nodejs"/>
+            <img src={reactLogo} alt="react"/>
+            <img src={reduxLogo} alt="redux"/>
+            <img src={vuejsLogo} alt="bitbucket"/>
+            <img src={laravelLogo} alt="bitbucket"/>
+            <br/>
+            
+            <img src={mongodbLogo} alt="mongodb"/>
+            <img src={mySql} alt="mySQL"/>
+            <img src={heroku} alt="heroku"/>
+            <br/>
+
+            <img src={gitLogo} alt="git"/>
+            <img src={githubLogo} alt="github"/>
+            <img src={bitbucket} alt="bitbucket"/>
           </div>
         </article>
     </section>
