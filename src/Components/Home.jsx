@@ -11,7 +11,7 @@ import Construction from './Construction';
 import Hello from './Hello'
 import Tech from './Tech'
 import Me from './Me'
-// import Work from './Work'
+import Work from './Work'
 import Contact from './Contact'
 
 const mapStateToProps = state => ({
@@ -47,16 +47,16 @@ class Home extends Component {
           <Skills/>
           <Contact/> */}
           <Hello />
-          {/* <Tech /> */}
           <Me />
+          <Tech />
           {/* <Work /> */}
           {/* <Contact /> */}
         </div>
         <footer>
           {/* <a href="#" className="homeFooterText">Back to top</a> */}
           <a href="#">Hello</a>
-          <a href="#">Tech</a>
           <a href="#">Me</a>
+          <a href="#">Tech</a>
           <a href="#">Work</a>
           <a href="#">Contact</a>
           <a href="#">Resume</a>

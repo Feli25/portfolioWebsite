@@ -1,0 +1,9 @@
+//breakpoints:
+$bp-base: 320px;
+$bp-bigSmartphone: 425px;
+$bp-smallTablet: 650px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+$footer-height: 50px - 1px;
+$content-height: calc(100vh - #{$footer-height});

@@ -10,39 +10,52 @@ import gitLogo from '../globals/git.png';
 import githubLogo from '../globals/github.png';
 import nodejsLogo from '../globals/nodejs.png';
 import mongodbLogo from '../globals/mongodb.png';
-import bitbucket from '../globals/bitbucket.png';
-import sql from '../globals/MySQL.svg';
+import bitbucket from '../globals/bitbucketBig.png';
+import sql from '../globals/sql.png';
+import mySql from '../globals/MySQL.svg';
+import heroku from '../globals/heroku.png';
+import vuejsLogo from '../globals/vuejs.png';
+import laravelLogo from '../globals/laravel.png';
 
 const mapStateToProps = state => ({
   ...state
 })
 
 
-class Me extends Component {
+class Tech extends Component {
   updateStore = (event) => {
     this.props.dispatch({type:"UPDATE_STORE", name:event.target.name, value:event.target.value})
    }
   render() {
     return(
-      <section id="me" className="me">
-        <h2 class="section-title">What I've worked with</h2>
-          {/* <article>
-              <div>
-                <p>
-                <h3>Hello!</h3>
-                My name is Felicitas Deutges, and I am a Berlin based Fullstack Web Developer. 
-                I primarily user JavaScript, with React and Node.js, and SQL. But picking up new frameworks or technologies is not a problem.<br/>
-                I enjoy building everything, from small business sites to rich interactive web apps. If you are a business seaking a web presence or an employer looking to hire, you can get in touch with me <a href="#contact">here</a>.
-                </p>
-              </div>
-              <div>
-                <img src={feliPic} width='90%' alt=""/>
-              </div>
-          </article> */}
-        </section>
+      <section id="tech" className="tech">
+        <h2 class="section-title">The tech I use</h2>
+        <img src={cssLogo} alt="css"/>
+        <img src={htmlLogo} alt="html"/>
+        <img src={jsLogo} alt="js"/>
+        <img src={phpLogo} alt="php"/>
+        <img src={sql} alt="sql"/> <br/>
+
+        <img src={nodejsLogo} alt="nodejs"/>
+        <img src={reactLogo} alt="react"/>
+        <img src={reduxLogo} alt="redux"/>
+        <img src={vuejsLogo} alt="bitbucket"/>
+        <img src={laravelLogo} alt="bitbucket"/>
+        <br/>
+        
+
+        <img src={mongodbLogo} alt="mongodb"/>
+        <img src={mySql} alt="mySQL"/>
+        <img src={heroku} alt="heroku"/>
+        <br/>
+
+        <img src={gitLogo} alt="git"/>
+        <img src={githubLogo} alt="github"/>
+        <img src={bitbucket} alt="bitbucket"/>
+      </section>
    );
   }
  }
  
 
-export default connect(mapStateToProps)(Me);
+export default connect(mapStateToProps)(Tech);

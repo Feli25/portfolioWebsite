@@ -16,6 +16,7 @@ class Me extends Component {
       <div class="me" id="me">
         <img src={feliPic} alt="" />
         <p>
+          Nice to meet you!<br/>
           I'm a Web Developer for Space Squad in Berlin.<br/>
           Currently working with PHP, Laravel and Vue.js.<br/>
           I enjoy building everything, from small business sites to rich and interactive web apps.<br/>
