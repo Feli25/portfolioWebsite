@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-import feliPic from '../Globals/meComplete.jpg';
+import feliPic from '../globals/meComplete.jpg';
 
 const mapStateToProps = state => ({
   ...state
@@ -14,7 +14,7 @@ class Me extends Component {
    }
   render() {
     return(
-      <section id="me">
+      <section class="me" id="me">
           <div  class="title">
             <h2>About me</h2>
           </div>
@@ -22,6 +22,7 @@ class Me extends Component {
               <div>
                 <p>
                 <h3>Hello!</h3>
+                Nice to meet you! <br/>
                 My name is Felicitas Deutges, and I am a Berlin based Fullstack Web Developer. 
                 I primarily user JavaScript, with React and Node.js, and SQL. But picking up new frameworks or technologies is not a problem.<br/>
                 I enjoy building everything, from small business sites to rich interactive web apps. If you are a business seaking a web presence or an employer looking to hire, you can get in touch with me <a href="#contact">here</a>.

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-import image from '../Globals/LogoRaw.png'
+import image from '../globals/LogoRaw.png'
 
 import Contact from './Contact'
 import Skills from './Skills'

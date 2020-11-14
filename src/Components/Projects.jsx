@@ -36,7 +36,8 @@ class Projects extends Component {
                   This was built for a hospital to be able to answer to questions related to Covid-19 without the people needing to come in house or block the phone lines.
                   You can register as a user and ask a question, certified doctors in quarantine at home can answer them.
                   <br/>
-                  <a href="https://hsmedizinischehilfe.herokuapp.com/">hsmedizinischehilfe.herokuapp.com</a>
+                  This project was shut down in 11.2021
+                  {/* <a href="https://hsmedizinischehilfe.herokuapp.com/">hsmedizinischehilfe.herokuapp.com</a> */}
                 </p>
               </div>
               <div className="twoContBox">
@@ -45,7 +46,8 @@ class Projects extends Component {
                   A social website, where you can post pictures and view posts of others, all based on a map. Comes from the idea of a digital travel diary.
                   You can make each post public or private and many more features.
                   <br/>
-                  <a href="https://ironpinpoint.herokuapp.com/">ironpinpoint.herokuapp.com</a>
+                  This project was shut down in 11.2021
+                  {/* <a href="https://ironpinpoint.herokuapp.com/">ironpinpoint.herokuapp.com</a> */}
                 </p>
                 <p>
                   <h3>Bublearn</h3>
