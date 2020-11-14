@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-// import image from '../globals/LogoRaw.png'
+import image from '../Globals/LogoRaw.png'
 
 import Contact from './Contact'
 import Skills from './Skills'
@@ -22,7 +22,7 @@ class HomePage extends Component {
     <div className="home">
       <div className="homeHeader">
         <div className="homeHeaderTitle">
-          {/* <img src={image} className="homeHeaderImage" alt=""/> */}
+          <img src={image} className="homeHeaderImage" alt=""/>
           Felicitas Deutges
         </div>
       </div>

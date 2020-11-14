@@ -1,22 +1,22 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-import jsLogo from '../globals/js.png';
-import reactLogo from '../globals/react.png';
-import reduxLogo from '../globals/redux.png';
-import phpLogo from '../globals/php.png';
-import htmlLogo from '../globals/html.png';
-import cssLogo from '../globals/css.png';
-import gitLogo from '../globals/git.png';
-import githubLogo from '../globals/github.png';
-import nodejsLogo from '../globals/nodejs.png';
-import mongodbLogo from '../globals/mongodb.png';
-import bitbucket from '../globals/bitbucketBig.png';
-import sql from '../globals/sql.png';
-import mySql from '../globals/MySQL.svg';
-import heroku from '../globals/heroku.png';
-import vuejsLogo from '../globals/vuejs.png';
-import laravelLogo from '../globals/laravel.png';
+import jsLogo from '../Globals/js.png';
+import reactLogo from '../Globals/react.png';
+import reduxLogo from '../Globals/redux.png';
+import phpLogo from '../Globals/php.png';
+import htmlLogo from '../Globals/html.png';
+import cssLogo from '../Globals/css.png';
+import gitLogo from '../Globals/git.png';
+import githubLogo from '../Globals/github.png';
+import nodejsLogo from '../Globals/nodejs.png';
+import mongodbLogo from '../Globals/mongodb.png';
+import bitbucket from '../Globals/bitbucketBig.png';
+import sql from '../Globals/sql.png';
+import mySql from '../Globals/MySQL.svg';
+import heroku from '../Globals/heroku.png';
+import vuejsLogo from '../Globals/vuejs.png';
+import laravelLogo from '../Globals/laravel.png';
 
 const mapStateToProps = state => ({
   ...state

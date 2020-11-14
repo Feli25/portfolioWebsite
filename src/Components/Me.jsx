@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import '../Global.scss';
-import feliPic from '../globals/meComplete.jpg';
+import feliPic from '../Globals/meComplete.jpg';
 
 const mapStateToProps = state => ({
   ...state
